@@ -12,7 +12,7 @@ set -euo pipefail
 #          ./convert.sh -i shrek.mp4 -n shrek -w 164 -h 81
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-CHUNK_DURATION=120
+CHUNK_DURATION=60
 WIDTH=""
 HEIGHT=""
 INPUT=""
