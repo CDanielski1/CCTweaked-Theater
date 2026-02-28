@@ -77,6 +77,7 @@ if not monitor then
 end
 
 if monitor then
+  monitor.setTextScale(0.5)
   local originalTerm = term.redirect(monitor)
   term.clear()
   shell.run("/32vid-player", movieUrl)
