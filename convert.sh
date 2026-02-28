@@ -105,7 +105,7 @@ while [[ $START -lt $TOTAL_DURATION ]]; do
     # Extract chunk with ffmpeg
     echo "  Extracting segment..."
     ffmpeg -y -ss "$START" -i "$INPUT" -t "$CHUNK_DURATION" \
-        -c:v libx264 -preset fast -c:a aac \
+        -vf scale=320:-2 -c:v libx264 -preset ultrafast -c:a aac \
         "$TEMP_CHUNK" -loglevel warning
 
     # Convert with sanjuuni
