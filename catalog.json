@@ -2,5 +2,9 @@
   {
     "name": "bad-apple",
     "path": "media/bad-apple/bad-apple"
+  },
+  {
+    "name": "shrek",
+    "path": "media/shrek/shrek"
   }
 ]
